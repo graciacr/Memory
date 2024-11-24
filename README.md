@@ -1,7 +1,4 @@
 # Proyecto **Memory Game** 🎮🃏
-
-Crea una **WebApp multijugador** para jugar al clásico juego **Memory** de forma remota, con un tablero interactivo y comunicación en tiempo real gracias a **WebSockets**. 
-
 ---
 
 ## 🚀 **¿Qué es?**
