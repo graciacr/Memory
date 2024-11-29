@@ -17,8 +17,8 @@
 ```
 npm run dev
 ```
-- Para abrir las ventanas del navegador con la dirección:
+Para abrir las ventanas del navegador con la dirección:
 http://localhost:8888
 
-- En modo desarrollo (con el shadow DOM completo), la dirección es:
+En modo desarrollo (con el shadow DOM completo), la dirección es:
 http://localhost:8888/index.html
