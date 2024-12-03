@@ -6,11 +6,33 @@
     <link rel="stylesheet" href="style.css">
     <title>Memory Game 🃏</title>
 </head>
+<script>
+    let btn = document.getElementById("btn");
+    let serverInput = document.getElementById("server");
+
+    btn.addEventListener("click", userInfo);
+
+    function userInfo() {
+        let parent = serverInput.closest(".entryarea");
+        let labelText = parent.querySelector(".labelline")?.textContent.trim();
+
+        if (labelText) {
+            console.log(`Descripción asociada: ${labelText}, Elemento ID: ${serverInput.id}`);
+        } else {
+            console.warn("No se encontró descripción para el servidor.");
+        }
+
+        // Validar el valor del input
+        if (serverInput.value !== "localhost") {
+            alert("El servidor tiene que ser localhost");
+        }
+    }
+</script>
 <body>
     <div class="connect">
         <h1>Memory</h1>
         <div class="entryarea">
-            <input type="text" required>
+            <input type="text" id ="server" required>
             <div class="labelline">
                 Servidor
             </div>
@@ -24,10 +46,13 @@
         <div class="entryarea">
             <input type="text" required>
             <div class="labelline">
-                Nombre del jugador
+                Nombre 
             </div>
         </div>
     </form>
+    <button type="button" id="btn">
+        Entrar
+    </button>
     
     </div>
 </body>
