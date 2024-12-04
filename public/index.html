@@ -5,28 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Memory Game 🃏</title>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<script>
-    let btn = document.getElementById("btn");
-    let serverInput = document.getElementById("server");
-
-    btn.addEventListener("click", userInfo);
-
-    function userInfo() {
-        let parent = serverInput.closest(".entryarea");
-        let labelText = parent.querySelector(".labelline")?.textContent.trim();
-
-        if (labelText) {
-            console.log(`Descripción asociada: ${labelText}, Elemento ID: ${serverInput.id}`);
-        } else {
-            console.warn("No se encontró descripción para el servidor.");
-        }
-
-        if (serverInput.value !== "localhost") {
-            alert("El servidor tiene que ser localhost");
-        }
-    }
-</script>
 <body>
     <div class="connect">
         <h1>Memory</h1>
@@ -37,13 +18,13 @@
             </div>
         </div>
         <div class="entryarea">
-            <input type="text" required>
+            <input type="text" id="port" required>
             <div class="labelline">
                 Puerto
             </div>
         </div>
         <div class="entryarea">
-            <input type="text" required>
+            <input type="text" id="name" required>
             <div class="labelline">
                 Nombre 
             </div>

@@ -6,6 +6,7 @@
 }
 
 body {
+    height: 100vh;
     display:flex;
     min-height: none;
     justify-content: center;
@@ -41,7 +42,7 @@ body {
     position: relative;
     height: 80px;
     line-height: 80px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 input {
@@ -83,4 +84,8 @@ input:valid + .labelline{
     transform: translate(-15px,-16px) scale(0.88);
     background-color: #8e948b;
     z-index: 1111;
+}
+
+.swal-custom-container {
+    z-index: 9999 !important; 
 }
