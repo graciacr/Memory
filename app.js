@@ -1,7 +1,7 @@
 const express = require('express')
 // const shadowsObj = require('./utilsShadows.js')
 // const webSockets = require('./utilsWebSockets.js')
-const port = 8080
+const port = 3000
 
 const app = express()
 app.listen(port)

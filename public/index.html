@@ -9,32 +9,37 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <div class="connect">
+    <div id="game">
         <h1>Memory</h1>
-        <div class="entryarea">
-            <input type="text" id ="server" required>
-            <div class="labelline">
-                Servidor
-            </div>
+        <div id="board"></div>
+        <p id="status"></p>
+        <div id="loginElement">
+            <form class="connect">
+                <div class="entryarea">
+                    <input type="text" id ="server" required value="localhost">
+                    <div class="labelline">
+                        Servidor
+                    </div>
+                </div>
+                <div class="entryarea">
+                    <input type="text" id="port" required value="8080">
+                    <div class="labelline">
+                        Puerto
+                    </div>
+                </div>
+                <div class="entryarea">
+                    <input type="text" id="name" required>
+                    <div class="labelline">
+                        Nombre 
+                    </div>
+                </div>
+                <button type="button" id="btn" onclick="loginOnClick()">
+                    Entrar
+                </button>
+            </form>
         </div>
-        <div class="entryarea">
-            <input type="text" id="port" required>
-            <div class="labelline">
-                Puerto
-            </div>
-        </div>
-        <div class="entryarea">
-            <input type="text" id="name" required>
-            <div class="labelline">
-                Nombre 
-            </div>
-        </div>
-    </form>
-    <button type="button" id="btn">
-        Entrar
-    </button>
+      </div>
     
-    </div>
+      <script src="client.js"></script>
 </body>
-<!-- comentario para subirlo -->
 </html>
