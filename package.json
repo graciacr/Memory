@@ -6,7 +6,8 @@
     "dev": "nodemon ./app.js --ext js,html,css",
     "pm2Start": "pm2 start ./app.js",
     "pm2List": "pm2 list",
-    "pm2Stop": "pm2 delete app"
+    "pm2Stop": "pm2 delete app",
+    "server": "node server.js"
   },
   "author": "Valeria Santana, Grace Clemente, Ruth Romero",
   "dependencies": {
