@@ -1,0 +1,9 @@
+@import url("/shadows/common.css"); /*importa estilos de sombras comunes*/
+
+.root {
+    display: block;
+    height: 100vh; /*ocupa toda la altura de la pantalla*/
+    overflow: hidden; /*oculta el desbordamiento*/
+    position: relative;
+    width: 100vw; /*ocupa todo el ancho de la pantalla*/
+}
